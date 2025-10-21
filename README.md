@@ -1,11 +1,5 @@
- ____  __  __  ___  _   _ ___ _____ ___  ____  
-|  _ \|  \/  |/ _ \| \ | |_ _|_   _/ _ \|  _ \ 
-| |_) | |\/| | | | |  \| || |  | || | | | |_) |
-|  _ <| |  | | |_| | |\  || |  | || |_| |  _ < 
-|_| \_\_|  |_|\___/|_| \_|___| |_| \___/|_| \_\
+# RMONITOR
 
+1] rename the file .env.example and add your information
 
-
-### rename the file .env.example and add your information
-
-### Provides information on websites and search in arrays
+2] Provides information on websites and search in arrays
