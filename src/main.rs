@@ -7,6 +7,16 @@ use std::env;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    println!(r"
+ ____  __  __  ___  _   _ ___ _____ ___  ____  
+|  _ \|  \/  |/ _ \| \ | |_ _|_   _/ _ \|  _ \ 
+| |_) | |\/| | | | |  \| || |  | || | | | |_) |
+|  _ <| |  | | |_| | |\  || |  | || |_| |  _ < 
+|_| \_\_|  |_|\___/|_| \_|___| |_| \___/|_| \_\
+
+by AurelBichop
+");
+
     let prefix = "https://".to_string();
 
     // List of sites and search words
