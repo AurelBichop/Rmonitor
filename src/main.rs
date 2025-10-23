@@ -22,16 +22,20 @@ by AurelBichop
     // List of sites and search words
     let site_web: [&str; 3] = ["url1","url2", "url3"];
     let pattern_searh: [&str; 3] = ["word1","word2", "word3"];
-
+    
+    let client = reqwest::Client::new();
 
     for i in 0..site_web.len(){
 
-        let resp = reqwest::get(prefix.clone() + site_web[i])
+        let resp = client
+        .get(prefix.clone() + site_web[i])
+        .header("User-Agent", "Mozilla/5.0")
+        .send()
         .await?
         .text()
-        //.json::<HashMap<String, String>>()
         .await?;
-    
+
+
         if !resp.contains(pattern_searh[i]) 
         {
             send_mail(site_web[i]);
