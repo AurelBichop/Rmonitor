@@ -20,9 +20,10 @@ by AurelBichop
     let prefix = "https://".to_string();
 
     // List of sites and search words
-    let site_web: [&str; 3] = ["url_web1","url_web2", "..."];
-    let pattern_searh: [&str; 3] = ["word1","word2", "..."];
-    
+    let site_web: [&str; 3] = ["url1","url2", "url3"];
+    let pattern_searh: [&str; 3] = ["word1","word2", "word3"];
+
+
     for i in 0..site_web.len(){
 
         let resp = reqwest::get(prefix.clone() + site_web[i])
