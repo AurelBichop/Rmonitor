@@ -23,7 +23,7 @@ by AurelBichop
     let site_web: [&str; 3] = ["url_web1","url_web2", "..."];
     let pattern_searh: [&str; 3] = ["word1","word2", "..."];
     
-    for i in 0..2{
+    for i in 0..site_web.len(){
 
         let resp = reqwest::get(prefix.clone() + site_web[i])
         .await?
